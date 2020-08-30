@@ -16,11 +16,11 @@ function sendButton(){
 button.addEventListener("click",sendButton)
 */
 
-//let fname=document.querySelector("#fname");
-//let lname=document.querySelector("#lname");
-//let form=document.querySelector("#form");
+let fname=document.querySelector("#fname");
+let lname=document.querySelector("#lname");
+let form=document.querySelector("#form");
 
-//let confirmation=document.querySelector("#confirmation message");
+let confirmation=document.querySelector("#confirmation message");
 
 
 form.addEventListener("submit",(event)=>{
