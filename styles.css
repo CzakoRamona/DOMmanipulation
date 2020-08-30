@@ -3,7 +3,7 @@ body{
     height: auto;
     margin:10px;
 }
-#confirmation_message :active{
+.confirmation{
     margin:20px;
     background-color: rgb(213, 247, 147);
     border:2px solid green;

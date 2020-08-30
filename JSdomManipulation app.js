@@ -19,8 +19,8 @@ button.addEventListener("click",sendButton)
 let fname=document.querySelector("#fname");
 let lname=document.querySelector("#lname");
 let form=document.querySelector("#form");
+let confirmation=document.querySelector("#confirmation")
 
-let confirmation=document.querySelector("#confirmation message");
 
 
 form.addEventListener("submit",(event)=>{
@@ -32,29 +32,30 @@ form.addEventListener("submit",(event)=>{
 });
 
 
-
 function validation(){
   let fnameValue=fname.value.trim();
   let lnameValue=lname.value.trim();
-
-  if (fnameValue===""){
+ 
+  if(fnameValue===""){
   console.log("insert first name")
 fname.style.border="1px solid red ";
+confirmation.style.display="none";
  }
   else{
     console.log("valid");
-    return true;
+  
   };
 
   if(lnameValue===""){
   console.log("insert last name")
   lname.style.border="3px solid red ";
+  confirmation.style.display="none";
   }else{
     console.log("valid");
-    return true;
-  }
-  return function confirmation(fnameValue){
     
+  return true;
   }
-}
+  
+  }
+
 
