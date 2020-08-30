@@ -52,7 +52,7 @@ confirmation.style.display="none";
   confirmation.style.display="none";
   }else{
     console.log("valid");
-    
+    confirmation.style.display="inherit";  
   return true;
   }
   
