@@ -1,0 +1,60 @@
+/*const nameInput=document.querySelector("#nameInput");
+nameInput.addEventListener("input", function(event){
+    console.log(event.target.value)
+})
+const button=document.querySelector("#send")
+
+function sendButton(){
+    console.log("se da click")
+    console.log("nameInput", nameInput.value)
+    if(nameInput.value){
+        console.log("Validare")
+    }else{
+        nameInput.getElementsByClassName.border="2px solid red";
+    }
+}
+button.addEventListener("click",sendButton)
+*/
+
+//let fname=document.querySelector("#fname");
+//let lname=document.querySelector("#lname");
+//let form=document.querySelector("#form");
+
+//let confirmation=document.querySelector("#confirmation message");
+
+
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+
+ validation();
+ 
+
+});
+
+
+
+function validation(){
+  let fnameValue=fname.value.trim();
+  let lnameValue=lname.value.trim();
+
+  if (fnameValue===""){
+  console.log("insert first name")
+fname.style.border="1px solid red ";
+ }
+  else{
+    console.log("valid");
+    return true;
+  };
+
+  if(lnameValue===""){
+  console.log("insert last name")
+  lname.style.border="3px solid red ";
+  }else{
+    console.log("valid");
+    return true;
+  }
+  return function confirmation(fnameValue){
+    
+  }
+}
+
